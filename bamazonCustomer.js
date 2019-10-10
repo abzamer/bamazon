@@ -58,10 +58,10 @@ function buySomething() {
                         var cost = res[i].price * answer.quantity;
                         connection.query(query, [stock, answer.product], function(err){
                             if(err) throw err;
-                            console.log("Your total cost today is: " + cost);
+                            console.log("Your total cost today is: $" + cost);
                         })
                     } else {
-                        console.log("Try again");
+                        console.log("Our apologies. We do not have enough to fulfill your request. Try choosing another item.");
                     }
                 }connection.end();
             } )
