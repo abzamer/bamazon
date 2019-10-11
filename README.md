@@ -1,4 +1,4 @@
-# bamazon
+# BAmazon
 This app is an Amazon-like storefront that uses MySQL to take in orders from customers and deplete stock from the store's inventory.
 
 ## Technologies
@@ -24,7 +24,7 @@ This video demonstrates what happens if quantity requested exceeds BAmazon inven
 * https://drive.google.com/file/d/193wS5WUUod-IhaAcqW_udN5iPUSPTl7c/view
 
 ### Screenshots
-![MySQL Schema](/images/sqlSchema.jpg)
+![MySQL Schema](./images/sqlSchema.jpg)
 
 
 
