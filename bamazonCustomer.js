@@ -2,7 +2,8 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 require("dotenv").config();
-var chalk = require("chalk");
+var columnify = require("columnify");
+// var chalk = require("chalk");
 
 // create the connection information for the SQL database
 var connection = mysql.createConnection({
@@ -17,6 +18,7 @@ var connection = mysql.createConnection({
 connection.connect(function (err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
+    console.log("_________________________________");
     //function will run once connectio is made. user will see inventory
     displayInventory();
 })
@@ -28,11 +30,14 @@ function displayInventory() {
     connection.query(query, function (err, res) {
         if (err) throw err;
         // console.log(res);
+        console.log("Item ID   Product & Price");
+        console.log("--------------------------------");
         for (i = 0; i < res.length; i++) {
             console.log(
-                res[i].item_id,
-                res[i].product_name,
-                "$" + res[i].price);
+                res[i].item_id + "\t",
+                res[i].product_name + ": $" + res[i].price
+                );
+            console.log("--------------------------------");
         }
         buySomething();
     })
