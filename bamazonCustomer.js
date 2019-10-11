@@ -1,9 +1,6 @@
-//dependencies
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 require("dotenv").config();
-var columnify = require("columnify");
-// var chalk = require("chalk");
 
 // create the connection information for the SQL database
 var connection = mysql.createConnection({
@@ -73,7 +70,7 @@ function buySomething() {
                             console.log("Your total cost today is: $" + cost);
                         })
                     } else {
-                        console.log("Our apologies. We do not have enough to fulfill your request. Try choosing another item.");
+                        console.log("Our apologies. We do not have enough to fulfill your request. Try choosing another quantity or item.");
                     }
                 } connection.end();
             })
