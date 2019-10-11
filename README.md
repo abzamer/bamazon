@@ -24,8 +24,8 @@ This video demonstrates what happens if quantity requested exceeds BAmazon inven
 * https://drive.google.com/file/d/193wS5WUUod-IhaAcqW_udN5iPUSPTl7c/view
 
 ### Screenshots
-![MySQL Schema](/images/sqlschema.jpg)
-![Inventory Function](/images/inventoryfunction.jpg)
+![MySQL Schema](./images/sqlschema.jpg)
+![Inventory Function](./images/inventoryfunction.jpg)
 
 
 
