@@ -15,7 +15,7 @@ The app will display its inventory of products to purchase. You will be prompted
 *Our apologies. We do not have enough to fulfill your request. Try choosing another quantity or item.
 
 ## Video and Screenshots
-The following videos are demonstrations of the BAmazon app in action. Following the videos, screenshots are provided of the code. 
+The following videos are demonstrations of the BAmazon app in action. 
 
 This video demonstrates what happens if quantity requested can be fulfilled by BAmazon
 * https://drive.google.com/file/d/1nVzq66vxGHwM_lx9q7RxtrID5_Ns7u1A/view
@@ -24,8 +24,8 @@ This video demonstrates what happens if quantity requested exceeds BAmazon inven
 * https://drive.google.com/file/d/193wS5WUUod-IhaAcqW_udN5iPUSPTl7c/view
 
 ### Screenshots
-![MySQL Schema](images/sqlSchema.jpg)
-![Inventory Function](images/InventoryFunction.jpg)
+![MySQL Schema](images/sqlschema.jpg)
+![Inventory Function](images/inventoryfunction.jpg)
 
 
 
